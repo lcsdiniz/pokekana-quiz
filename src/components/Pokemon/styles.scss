@@ -1,0 +1,62 @@
+@use "../../styles/global.scss";
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 24rem;
+
+  h1, h2 {
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin: 1rem 0 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    background-color: global.$gray500;
+    border-radius: global.$border-radius;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .katakana {
+    font-family: 'Kosugi Maru', sans-serif;
+  }
+
+  img {
+    width: 24rem;
+    height: auto;
+    position: relative;
+  }
+
+  .feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 110px;
+  
+    span {
+      font-size: 2rem;
+    }
+
+    .success {
+      color: global.$green300;
+      animation: bounceIn;
+      animation-duration: 1s;
+    }
+
+    .error {
+      color: global.$red200;
+    }
+
+    .answer-container {
+      animation: flipInX;
+      animation-duration: 1s;
+    }
+  }
+}
+

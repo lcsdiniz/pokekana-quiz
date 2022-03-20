@@ -1,0 +1,17 @@
+@use "../../../styles/global.scss";
+
+.header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border-radius: global.$border-radius;
+  border: 2px solid global.$gray300;
+
+  svg, span {
+    font-size: 19.2px;
+  }
+}

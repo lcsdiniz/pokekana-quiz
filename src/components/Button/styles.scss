@@ -1,0 +1,30 @@
+@use "../../styles/global.scss";
+
+.customized-button {
+  padding: 0.5rem;
+  width: 8rem;
+  margin-top: 2rem;
+  border-radius: global.$border-radius;
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+  &.submit {
+    background-color: global.$blue700;
+    color: global.$blue300;
+  }
+
+  &.next {
+    background-color: global.$green300;
+    color: #fff;
+  }
+
+  &.pass {
+    background-color: global.$yellow700;
+    color: global.$yellow300;
+  }
+
+  &:disabled {
+    cursor: auto;
+    filter: brightness(0.5);
+  }
+}

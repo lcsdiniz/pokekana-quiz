@@ -1,0 +1,60 @@
+$border-radius: 0.5rem;
+
+$gray900: #2A2438;
+$gray700: #352F44;
+$gray500: #5C5470;
+$gray300: #DBD8E3;
+
+$green700: #394d33;
+$green300: #31cf46;
+
+$yellow700: #4d4633;
+$yellow300: #f5be27;
+
+$blue700: #0f3455;
+$blue300: #108cff;
+
+$red200: #ff4d4d;
+
+* {
+    margin: 0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: $gray300;
+}
+
+body {
+  background: $gray900;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 94vh;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    font-size: 70%;
+  }
+}
