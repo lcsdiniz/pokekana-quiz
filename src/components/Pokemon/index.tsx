@@ -29,8 +29,7 @@ export function Pokemon({
 }: PokemonProps) {
   
   const checkGameMode = () => {
-    console.log(showAnswer)
-    return (localStorage.getItem('@pokekana-hard-mode') === 'false' || showAnswer)
+    return (localStorage.getItem('@pokekana-hard-mode') === 'false' || localStorage.getItem('@pokekana-hard-mode') === null || showAnswer)
       ? selectedPokemon.artwork
       : 'https://64.media.tumblr.com/3cd57bc4e13df49261eadac4f462bbff/3293d9c615ed5031-c0/s540x810/6dc2ab3e9492fb3becae033cd011d622aaf029ab.png'
   }
