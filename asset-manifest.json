@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokekana-quiz/static/css/main.d506e34f.css",
+    "main.js": "/pokekana-quiz/static/js/main.446f72bc.js",
+    "static/js/787.99c1c3de.chunk.js": "/pokekana-quiz/static/js/787.99c1c3de.chunk.js",
+    "index.html": "/pokekana-quiz/index.html",
+    "main.d506e34f.css.map": "/pokekana-quiz/static/css/main.d506e34f.css.map",
+    "main.446f72bc.js.map": "/pokekana-quiz/static/js/main.446f72bc.js.map",
+    "787.99c1c3de.chunk.js.map": "/pokekana-quiz/static/js/787.99c1c3de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d506e34f.css",
+    "static/js/main.446f72bc.js"
+  ]
+}
