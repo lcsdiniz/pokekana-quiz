@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+import { useDifficultyMode } from '../../hooks/useDifficultyMode';
 import { Loading } from '../Loading';
-import PlaceholderArtwork from './img/artworkPlaceholder.png';
+import PlaceholderArtwork from './artworkPlaceholder.png';
 import './styles.scss';
 
 interface PokemonProps {
@@ -27,11 +27,12 @@ export function Pokemon({
   isLoading,
   setIsLoading,
 }: PokemonProps) {
+  const { hardMode } = useDifficultyMode();
   
-  const checkGameMode = () => {
-    return (localStorage.getItem('@pokekana-hard-mode') === 'false' || localStorage.getItem('@pokekana-hard-mode') === null || showAnswer)
-      ? selectedPokemon.artwork
-      : 'https://64.media.tumblr.com/3cd57bc4e13df49261eadac4f462bbff/3293d9c615ed5031-c0/s540x810/6dc2ab3e9492fb3becae033cd011d622aaf029ab.png'
+  const getArtwork = () => {
+    return (hardMode && !showAnswer)
+      ? PlaceholderArtwork
+      : selectedPokemon.artwork
   }
 
   return (
@@ -41,7 +42,7 @@ export function Pokemon({
         : (
         <div className="pokemon-container">
           <img
-            src={checkGameMode()}
+            src={getArtwork()}
             alt={selectedPokemon.name.romaji}
             onLoad={() => {
               setIsLoading(false)

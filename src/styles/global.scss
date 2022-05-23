@@ -47,14 +47,27 @@ button {
   height: 94vh;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   :root {
     font-size: 90%;
+  }
+}
+
+
+@media (max-width: 700px) {
+  :root {
+    font-size: 80%;
   }
 }
 
 @media (max-width: 375px) {
   :root {
     font-size: 70%;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    font-size: 65%;
   }
 }

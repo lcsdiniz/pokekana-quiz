@@ -1,13 +1,13 @@
 import { useState } from 'react';
+import { useDifficultyMode } from '../../hooks/useDifficultyMode';
 import './styles.scss';
 
 export function Toggle() {
-  const [isToggled, setIsToggled] = useState(() => {
-    return localStorage.getItem('@pokekana-hard-mode') === 'true' ? true : false
-  });
-
+  const { hardMode, changeDifficultyMode } = useDifficultyMode();
+  const [isToggled, setIsToggled] = useState(hardMode);
+  
   const handleToggle = () => {
-    localStorage.setItem('@pokekana-hard-mode', String(!isToggled));
+    changeDifficultyMode();
     setIsToggled(!isToggled);
   }
 

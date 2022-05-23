@@ -1,5 +1,4 @@
 import { CgPokemon } from 'react-icons/cg';
-import { MdCatchingPokemon } from 'react-icons/md';
 import './styles.scss';
 
 export function Loading() {
