@@ -12,7 +12,6 @@
 
   h1 {
     font-size: 4rem;
-    margin: 1rem 0 0;
   }
 
   h2 {
@@ -25,6 +24,16 @@
 
   .katakana {
     font-family: 'Kosugi Maru', sans-serif;
+  }
+
+ .img-container {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .loaded-info {
+    width: 24rem;
+    height: 28rem;
   }
 
   img {

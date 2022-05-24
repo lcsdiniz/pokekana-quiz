@@ -37,34 +37,43 @@ export function Pokemon({
 
   return (
     <>
-      {isLoading
-        ? <Loading />
-        : (
+      
         <div className="pokemon-container">
-          <img
-            src={getArtworkData().src}
-            alt={getArtworkData().alt}
-            onLoad={() => {
-              setIsLoading(false)
-            }}
-          />
-          <h1 className='katakana'>{selectedPokemon.name.katakana}</h1>      
+          <div className='loaded-info'>
+            {isLoading
+              ? <Loading />
+              : (
+                <>
+                  <div className='img-container'>
+                    <img
+                      src={getArtworkData().src}
+                      alt={getArtworkData().alt}
+                      onLoad={() => {
+                        setIsLoading(false)
+                      }}
+                    />
+                  </div>
+                  <h1 className='katakana'>{selectedPokemon.name.katakana}</h1>  
+                </>
+              )
+            }
+          </div>
+              
           <div className='feedback-container'>
             {showAnswer && (
               <>
                 {isAnswerRight
                   ? <span className='success animate__animated animate__bounce'>Success!</span>
                   : (
-                      <div className='answer-container'>
-                        <h2>{selectedPokemon.name.romaji}</h2>
-                        <p className='error'>You typed: {playerAnswer}</p>
-                      </div>
+                    <div className='answer-container'>
+                      <h2>{selectedPokemon.name.romaji}</h2>
+                      <p className='error'>You typed: {playerAnswer}</p>
+                    </div>
                 )}
               </>
             )}   
           </div>
         </div>
-      )}
     </>
   )
 }
