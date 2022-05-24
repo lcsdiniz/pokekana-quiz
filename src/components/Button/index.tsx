@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from "react";
+import { InputHTMLAttributes, memo } from "react";
 import './styles.scss';
 
 interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
@@ -6,7 +6,7 @@ interface ButtonProps extends InputHTMLAttributes<HTMLButtonElement> {
   placeholder: string;
 }
 
-export function Button({ placeholder, type, ...rest }: ButtonProps) {
+function ButtonComponent({ placeholder, type, ...rest }: ButtonProps) {
   return (
     <button
       {...rest}
@@ -15,4 +15,8 @@ export function Button({ placeholder, type, ...rest }: ButtonProps) {
       {placeholder}
     </button>
   )
-}
+};
+
+export const Button = memo(ButtonComponent, (prevProps, nextProps) => {
+  return Object.is(prevProps.placeholder, nextProps.placeholder) && Object.is(prevProps.disabled, nextProps.disabled)
+})

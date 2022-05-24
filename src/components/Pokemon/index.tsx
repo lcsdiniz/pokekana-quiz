@@ -2,6 +2,7 @@ import { useDifficultyMode } from '../../hooks/useDifficultyMode';
 import { Loading } from '../Loading';
 import PlaceholderArtwork from '../../assets/artworkPlaceholder.png';
 import './styles.scss';
+import { memo } from 'react';
 
 interface PokemonProps {
   selectedPokemon: {
@@ -19,7 +20,7 @@ interface PokemonProps {
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Pokemon({
+function PokemonComponent({
   selectedPokemon,
   showAnswer,
   playerAnswer,
@@ -77,3 +78,7 @@ export function Pokemon({
     </>
   )
 }
+
+export const Pokemon = memo(PokemonComponent, (prevProps, nextProps) => {
+  return prevProps.isLoading === nextProps.isLoading && prevProps.showAnswer === nextProps.showAnswer
+})
