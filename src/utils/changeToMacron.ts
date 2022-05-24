@@ -1,7 +1,7 @@
 export function changeToMacron(character: string) {
   var characterToBeReturned = character;
   
-  switch (character) {
+  switch (character.toLocaleLowerCase()) {
     case 'â':
       characterToBeReturned = 'ā';
       break;
