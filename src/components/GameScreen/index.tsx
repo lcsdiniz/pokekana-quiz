@@ -5,7 +5,7 @@ import { Pokemon } from '../Pokemon';
 import { fetchPokemonGeneralData, fetchPokemonSpeciesData } from '../../services/pokemonDataServices';
 import { checksStringEquality } from '../../utils/checksStringEquality';
 import { randomNumberGenerator } from '../../utils/randomNumberGenerator';
-import pokemonNamesWithHepburn from '../../utils/pokemonNamesWithHepburn.json';
+import { pokemonNamesWithHepburn } from '../../utils/pokemonNamesWithHepburn';
 import { CIRCUNFLEXED_CHARACTERS } from '../../utils/constants';
 import { changeToMacron } from '../../utils/changeToMacron';
 
@@ -90,7 +90,7 @@ export function GameScreen() {
   }, []);
 
   return(
-    <main className="main-content">
+    <main className="main-content" data-testid="main-content">
       <Pokemon
         selectedPokemon={selectedPokemon}
         showAnswer={showAnswer}

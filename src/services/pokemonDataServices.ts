@@ -8,6 +8,7 @@ export const fetchPokemonGeneralData = async (pokemonDexNumber: number): Promise
   const generalData = {
     officialArtwork: data.sprites.other['official-artwork'].front_default
   }
+
   return generalData;
 } 
 
@@ -19,6 +20,6 @@ export const fetchPokemonSpeciesData = async (pokemonDexNumber: number): Promise
       (languageName: any) => JAPANESE_LANGUAGE_IDS.includes(languageName.language.name)
     ).name
   }
-  
+
   return speciesData;
 } 

@@ -1,6 +1,6 @@
 import { useDifficultyMode } from '../../hooks/useDifficultyMode';
 import { Loading } from '../Loading';
-import PlaceholderArtwork from './artworkPlaceholder.png';
+import PlaceholderArtwork from '../../assets/artworkPlaceholder.png';
 import './styles.scss';
 
 interface PokemonProps {
@@ -29,11 +29,11 @@ export function Pokemon({
 }: PokemonProps) {
   const { hardMode } = useDifficultyMode();
   
-  const getArtwork = () => {
+  const getArtworkData = (): { src: string, alt: string } => {
     return (hardMode && !showAnswer)
-      ? PlaceholderArtwork
-      : selectedPokemon.artwork
-  }
+      ? { src: PlaceholderArtwork, alt: "?" }
+      : { src: selectedPokemon.artwork, alt: selectedPokemon.name.katakana }
+  };
 
   return (
     <>
@@ -42,8 +42,8 @@ export function Pokemon({
         : (
         <div className="pokemon-container">
           <img
-            src={getArtwork()}
-            alt={selectedPokemon.name.romaji}
+            src={getArtworkData().src}
+            alt={getArtworkData().alt}
             onLoad={() => {
               setIsLoading(false)
             }}
@@ -64,9 +64,7 @@ export function Pokemon({
             )}   
           </div>
         </div>
-        )}
+      )}
     </>
-    
-    
   )
 }

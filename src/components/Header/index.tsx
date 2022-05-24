@@ -14,7 +14,7 @@ export function Header() {
       <HeaderButton
         handleClick={() => setHelpModalOpened(true)}
       >
-        <span>?</span>
+        ?
       </HeaderButton>
 
       <h1 className='title'>PokéKana Quiz</h1>

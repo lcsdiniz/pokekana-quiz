@@ -10,8 +10,9 @@
   background: transparent;
   border-radius: global.$border-radius;
   border: 2px solid global.$gray300;
-
-  svg, span {
+  font-size: 19.2px;
+  
+  svg {
     font-size: 19.2px;
   }
 }

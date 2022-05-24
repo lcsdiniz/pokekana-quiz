@@ -9,6 +9,7 @@ interface HeaderButtonProps {
 export function HeaderButton({ handleClick, children }: HeaderButtonProps) {
   return (
     <button
+      data-testid="header-button"
       className="header-button"
       onClick={handleClick}
     >

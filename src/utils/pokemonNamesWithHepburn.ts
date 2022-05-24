@@ -1,4 +1,4 @@
-{
+export const pokemonNamesWithHepburn = {
   "pokemonList": [
       {
           "ndex": "1",
