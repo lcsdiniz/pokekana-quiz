@@ -4,7 +4,7 @@ import './styles.scss';
 export function Loading() {
   return (
     <div className='loading-container'>
-      <CgPokemon className="loading-icon" size={80}/>
+      <CgPokemon className="loading-icon animate__animated animate__infinite" size={80}/>
       Loading
     </div>   
   )
