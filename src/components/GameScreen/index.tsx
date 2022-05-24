@@ -28,7 +28,6 @@ export function GameScreen() {
 
     const generalData = await fetchPokemonGeneralData(randomNumber);
     const speciesData = await fetchPokemonSpeciesData(randomNumber);
-
     setSelectedPokemon({
       dexNumber: randomNumber,
       name: {
