@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+<p align="left">
+  <h1>PokéKana Quiz</h1>
+  
+  
+  A fun way to study japanese with Pokémon!
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  [![Author](https://img.shields.io/badge/author-lcsdiniz-2A2438)](https://www.linkedin.com/in/lcsdiniz/)
+  [![Languages](https://img.shields.io/github/languages/count/lcsdiniz/pokekana-quiz?color=2A2438)](#)
+  [![Stars](https://img.shields.io/github/stars/lcsdiniz/pokekana-quiz?color=2A2438)](https://github.com/lcsdiniz/pokekana-quiz/stargazers)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37384872/170163710-2b31d9a0-6869-434b-8ca7-3bd8b89f3091.png" width=700>
+  
+## 📚 Instructions 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37384872/170163726-4f4cfd42-1155-4939-9ad3-8f320d35a0d0.png" width=700>
+</p>
 
-In the project directory, you can run:
+## ⚙️ Options 
+<p align="center">
+  Enable "Hard Mode" so you can have a more challenging experience!
+  <img src="https://user-images.githubusercontent.com/37384872/170163724-50d14dc3-c02a-4ab1-b057-e40352bb13f5.png" width=700>
+  <img src="https://user-images.githubusercontent.com/37384872/170163722-805b710b-c140-4409-ae05-736179d9f7fa.png" width=700>
+</p>
 
-### `yarn start`
+## 🛸 Technologies
+- [ReactJS](https://reactjs.org/);
+- [TypeScript](https://www.typescriptlang.org/);
+- [PokéAPI](https://pokeapi.co/);
+- [Sass](https://sass-lang.com/);
+- [Animate.css](https://animate.style/);
+- [React Icons](https://react-icons.netlify.com/#/);
+- [Testing Library](https://testing-library.com/);
+- [Jest](https://jestjs.io/pt-BR/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🏁 Get started
+```bash
+# Clone this repository
+$ git clone https://github.com/lcsdiniz/pokekana-quiz.git
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Go into the repository
+$ cd pokekana-quiz
 
-### `yarn test`
+# Install dependencies
+$ yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run the app
+$ yarn dev
+```
 
-### `yarn build`
+## 🧪 Testing
+```bash
+# Run automated tests
+$ yarn test
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📮 Feedback
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to send me feedback on [LinkedIn](https://www.linkedin.com/in/lcsdiniz/) or [file an
+issue](https://github.com/lcsdiniz/pokekana-quiz/issues/new). Feature requests are always welcome.
