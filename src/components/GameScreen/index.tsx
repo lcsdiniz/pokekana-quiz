@@ -83,7 +83,7 @@ export function GameScreen() {
 
   useEffect(() => {
     fetchPokemonData(
-      25
+      randomNumberGenerator()
     );
   }, []);
 
