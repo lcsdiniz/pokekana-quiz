@@ -42,7 +42,6 @@ export function GameScreen() {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const typedCharacter = event.target.value.slice(-1);
-
     if(CIRCUNFLEXED_CHARACTERS.includes(typedCharacter)) {
       const changedCharacter = changeToMacron(typedCharacter);
 
@@ -84,7 +83,7 @@ export function GameScreen() {
 
   useEffect(() => {
     fetchPokemonData(
-      randomNumberGenerator()
+      25
     );
   }, []);
 

@@ -18,5 +18,5 @@ function ButtonComponent({ placeholder, type, ...rest }: ButtonProps) {
 };
 
 export const Button = memo(ButtonComponent, (prevProps, nextProps) => {
-  return Object.is(prevProps.placeholder, nextProps.placeholder) && Object.is(prevProps.disabled, nextProps.disabled)
+  return Object.is(prevProps.placeholder, nextProps.placeholder) && Object.is(prevProps.disabled, nextProps.disabled) && Object.is(prevProps.onClick, nextProps.onClick)
 })
