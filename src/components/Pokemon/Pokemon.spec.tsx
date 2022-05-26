@@ -15,7 +15,7 @@ const mockedDifficultyMode = useDifficultyMode as jest.Mock;
 
 jest.mock('../../hooks/useDifficultyMode');
 
-describe('Pokemon component', () => {
+describe('Pokemon', () => {
   beforeEach(() => {
     mockedDifficultyMode.mockImplementation(() => {
       return {

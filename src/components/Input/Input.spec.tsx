@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Input } from '.';
 import '@testing-library/jest-dom';
 
-describe('Input component', () => {
+describe('Input', () => {
   it('renders correctly', () => {
     render(
       <Input placeholder="Who is that Pokémon?" />

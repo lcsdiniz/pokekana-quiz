@@ -12,7 +12,7 @@ const mockedRandomNumberGenerator = mocked(randomNumberGenerator);
 jest.mock('../../utils/randomNumberGenerator');
 jest.mock('../../services/pokemonDataServices');
 
-describe('GameScreen component', () => {
+describe('GameScreen', () => {
   beforeEach(async () => {
     mockedRandomNumberGenerator.mockReturnValueOnce(25);
 
